@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Beemp</title>
+  </head>
+  <body>
+    <h1>{{user.local.username}}</h1>
+    <p>{{user.local.first_name}}
+      {{user.local.last_name}},
+      {{user.local.email}}</p>
+
+    <!-- ADD NEW ELEMENT -->
+    <form action="/beemp" method="post">
+      <div class="form-group">
+        <label>Message</label><input type="text" name="message">
+      </div>
+      <button type="submit">Send</button>
+    </form>
+
+    <ul>
+      {{#each messages}}
+      <li>
+          <!-- {{_id}} -->
+          <a style="color: #b8901f;">{{name}}</a>
+          <a style="color: #b41f1f;">{{message}}</a>
+          <br>
+            <a href="/beemp/delete/{{_id}}">Delete</a>
+            <a href="/beemp/edit/{{_id}}">Edit</a>
+      </li>
+      {{/each}}
+
+
+  </body>
+</html>
