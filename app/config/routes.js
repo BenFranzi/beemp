@@ -131,4 +131,9 @@ module.exports = function(app, hbs) {
 		})
 		}
 	})
+
+	app.get('/logout', (req,res) => {
+		req.logout()  //A function of passport
+		res.redirect('/')
+	})
 }

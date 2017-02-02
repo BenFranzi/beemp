@@ -1,5 +1,6 @@
 const express = require('express')
 const morgan = require('morgan')
+const path = require('path');
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
@@ -11,6 +12,8 @@ const app = express()
 const port = process.env.PORT || 3010
 const configDB = require('./app/config/db.js')
 mongoose.connect(configDB.url)
+
+app.use(express.static(path.join(__dirname + '/public')))
 
 app.use(morgan('dev'))
 app.set('view engine', 'hbs')
