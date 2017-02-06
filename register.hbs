@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTER</title>
+    <link rel="stylesheet" href="./res/bootstrap-4.0.0-alpha.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./res/font-awesome-4.7.0/css/font-awesome.min.css">
+   <script src="./res/jquery.min.js"></script>
+   <script src="./res/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<nav class="navbar navbar-light bg-faded">
+  <h3>beemp.</h3>
+</nav>
+
+<div class="container" style="padding-top: 50px;">
+  <div class="row">
+    <div class="col-lg-4 col-md-4">
+      <div class="hidden-sm-down not-visible">
+        <!-- Message -->
+        <h3>Fun for the whole family</h3>
+        <div>
+          <p>we promise i swear your whole family will be impressed by this and not depressed like the last</p>
+        </div>
+        <br>
+        <h3>Fun for the whole family</h3>
+        <div>
+          <p>we promise i swear your whole family will be impressed by this and not depressed like the last</p>
+        </div>
+        <br>
+        <h3>Fun for the whole family</h3>
+        <div>
+          <p>we promise i swear your whole family will be impressed by this and not depressed like the last</p>
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="col-md-2">
+
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">Register</h3>
+          <form action="/register" method="post">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <div class="form-inline">
+                <input type="text" name="firstname" id="name" class="form-control" style="width:48%; margin:5px 3px;" placeholder="first">
+                <input type="text" name="lastname"  id="name" class="form-control" style="width:48%; margin:5px 3px;" placeholder="last">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" name="username" id="username" class="form-control" placeholder="username">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="form-control" placeholder="email">
+            </div>
+
+            <div class="form-group">
+              <label for="name">Birthday</label>
+              <div class="form-inline">
+
+                  <select name="month" class="form-control"  style="width:32%; margin:5px 3px;" placeholder="month" >
+                      <option value="" disabled selected hidden>month</option>
+                      <option value="January">January</option>
+                      <option value="Febuary">Febuary</option>
+                      <option value="March">March</option>
+                      <option value="April">April</option>
+                      <option value="May">May</option>
+                      <option value="June">June</option>
+                      <option value="July">July</option>
+                      <option value="August">August</option>
+                      <option value="September">September</option>
+                      <option value="October">October</option>
+                      <option value="November">November</option>
+                      <option value="December">December</option>
+                    </select>
+
+                <input type="text" name="day"  id="day" class="form-control" style="width:32%; margin:5px 3px;" placeholder="day">
+                <input type="text" name="year"  id="year" class="form-control" style="width:32%; margin:5px 3px;" placeholder="year">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Gender</label>
+              <div class="form-inline">
+
+                  <select name="gender" class="form-control"  style="width:100%;" placeholder="gender" >
+                      <option value="" disabled selected hidden>I am...</option>
+                      <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                      <option value="Attack Helicopter">Attack Helicopter</option>
+                      <option value="Other">Other</option>
+                    </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name">Location</label>
+              <div class="form-inline">
+
+                  <select name="location" class="form-control"  style="width:100%;" placeholder="location" >
+                      <option value="" disabled selected hidden>I live...</option>
+                    	<option value="ALA">Åland Islands</option>
+                    	<option value="ALB">Albania</option>
+                    	<option value="DZA">Algeria</option>
+                    	<option value="ASM">American Samoa</option>
+                    	<option value="AND">Andorra</option>
+                    	<option value="AGO">Angola</option>
+                    	<option value="AIA">Anguilla</option>
+                    	<option value="ATA">Antarctica</option>
+                    	<option value="ATG">Antigua and Barbuda</option>
+                    	<option value="ARG">Argentina</option>
+                    	<option value="ARM">Armenia</option>
+                    	<option value="ABW">Aruba</option>
+                    	<option value="AUS">Australia</option>
+                    </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contract">
+                Do you agree to the <a href="#">terms and conditions</a>?
+              </label>
+              <input type="checkbox" name="contract" id="contract">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Next step</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
